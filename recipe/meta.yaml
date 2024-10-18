@@ -1,13 +1,13 @@
 {% set name = "shot-scraper" %}
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/shot-scraper-{{ version }}.tar.gz
-  sha256: 84fccec2f4d0005b3d210464abfbb0fa91efe593f95d4dd99fad3948bf2e74f0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/shot_scraper-{{ version }}.tar.gz
+  sha256: 7aeb7b46e6ac65dbbf5a858531584ae1354c9a4d1300f051327d7f771e83d397
 
 build:
   entry_points:
