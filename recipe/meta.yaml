@@ -20,7 +20,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - uv-build >=0.9.7,<0.10.0
   run:
     - python >={{ python_min }}
     - click
@@ -31,6 +31,9 @@ requirements:
 test:
   imports:
     - shot_scraper
+  commands:
+    - pip check
+    - shot-scraper --help
   requires:
     - pip
     - python {{ python_min }}
