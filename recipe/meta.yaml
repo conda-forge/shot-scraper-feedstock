@@ -1,13 +1,13 @@
 {% set name = "shot-scraper" %}
-{% set version = "1.11" %}
+{% set version = "1.12" %}
 
 package:
   name: {{ name|lower }}
   version: "{{ version }}"
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/shot_scraper-{{ version }}.tar.gz
-  sha256: af3efcad697f3b001f624ccdb2499417e4169bee5bf01672840a55175eef6d92
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/shot_scraper-{{ version }}.tar.gz
+  sha256: 2baed3e5510d759de5eac0a1ef554d0d321d03a561ccbfd3af8c7b29edfe244b
 
 build:
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - uv-build >=0.9.7,<0.10.0
   run:
     - pydantic
-    - playwright >=1.61.0
+    - playwright >=1.62.0
     - python >={{ python_min }}
     - click
     - pyyaml
